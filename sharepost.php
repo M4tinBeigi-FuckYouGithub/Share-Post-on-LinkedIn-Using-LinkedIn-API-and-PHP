@@ -35,10 +35,10 @@ try {
         $body->text = new \stdClass();
         $body->content->contentEntities[0]->thumbnails[0] = new \stdClass();
         $body->content->contentEntities[0]->entityLocation = $link;
-        $body->content->contentEntities[0]->thumbnails[0]->resolvedUrl = "http://mobamin.com/wp-content/uploads/2018/02/fgfdg.jpg";
-        $body->content->title = 'test';
+        $body->content->contentEntities[0]->thumbnails[0]->resolvedUrl = "linke image";
+        $body->content->title = 'text';
         $body->owner = 'urn:li:person:'.$linkedin_id;
-        $body->text->text = 'test';
+        $body->text->text = 'text';
         $body_json = json_encode($body, true);
          
         try {
